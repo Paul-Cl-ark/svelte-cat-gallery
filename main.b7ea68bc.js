@@ -4,6 +4,6 @@ var t=arguments[3];function e(){}Object.defineProperty(exports,"__esModule",{val
 },{}],"YJzu":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var e=require("svelte/internal");function t(t){let o;return{c(){(o=(0,e.element)("p")).textContent="Hello World"},m(t,n){(0,e.insert)(t,o,n)},p:e.noop,i:e.noop,o:e.noop,d(t){t&&(0,e.detach)(o)}}}class o extends e.SvelteComponent{constructor(o){super(),(0,e.init)(this,o,null,t,e.safe_not_equal,{})}}var n=o;exports.default=n;
 },{"svelte/internal":"YkLP"}],"epB2":[function(require,module,exports) {
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var e=t(require("./App.svelte"));function t(e){return e&&e.__esModule?e:{default:e}}const r=new e.default({target:document.querySelector("#app")});var u=r;exports.default=u;
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var e=t(require("./App.svelte"));function t(e){return e&&e.__esModule?e:{default:e}}const r=new e.default({target:document.getElementById("app")});var u=r;exports.default=u;
 },{"./App.svelte":"YJzu"}]},{},["epB2"], null)
-//# sourceMappingURL=/main.1be23091.js.map
+//# sourceMappingURL=main.b7ea68bc.js.map
