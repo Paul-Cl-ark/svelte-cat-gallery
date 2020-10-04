@@ -4,6 +4,7 @@
   "description": "A cat galler built in svelte.js",
   "main": "src/main.js",
   "scripts": {
+    "clean": "rm dist/bundle.js",
     "dev": "parcel index.html",
     "build": "parcel build index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
