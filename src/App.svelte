@@ -13,18 +13,23 @@
   })
 </script>
 
-<div>
+<div class="images">
   {#each images as image}
   <img src="{image.url}" alt="A nice cat" />
   {/each}
 </div>
 
 <style>
-  img {
-    width: 300px;
-    height: 300px;
+  .images {
+    display: grid;
+    grid-gap: 5vh;
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-    /*Scale down will take the necessary specified space that is 100px x 100px without stretching the image*/
+  img {
+    width: 100%;
+    height: auto;
+    max-height: 46vh;
     object-fit: scale-down;
   }
 </style>
