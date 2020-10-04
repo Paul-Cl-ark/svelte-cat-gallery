@@ -22,7 +22,6 @@ jobs:
           npm run build
         env:
           CAT_API_KEY: ${{ secrets.CAT_API_KEY }}
-          NODE_ENV: production
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.2
