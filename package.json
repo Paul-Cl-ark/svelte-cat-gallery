@@ -1,13 +1,18 @@
 {
   "name": "svelte-cat-gallery",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A cat galler built in svelte.js",
+  "main": "src/main.js",
   "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "browserslist": [
+    "last 1 Chrome version"
+  ],
   "keywords": [],
-  "author": "",
+  "author": "Paul Clark",
   "license": "ISC",
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
