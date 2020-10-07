@@ -1,7 +1,12 @@
 {
+  "author": "Paul Clark",
   "name": "svelte-cat-gallery",
   "version": "1.0.0",
-  "description": "A cat galler built in svelte.js",
+  "description": "A cat gallery built in svelte.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paul-cl-ark/svelte-cat-gallery.git"
+  },
   "main": "src/main.js",
   "scripts": {
     "clean": "rm dist/bundle.js",
@@ -9,10 +14,10 @@
     "build": "parcel build --no-source-maps src/index.html --public-url ./"
   },
   "browserslist": [
-    "last 1 Chrome version"
+    "last 1 chrome version",
+    "last 1 firefox version"
   ],
   "keywords": [],
-  "author": "Paul Clark",
   "license": "ISC",
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
