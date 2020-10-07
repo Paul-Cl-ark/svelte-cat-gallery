@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rm dist/bundle.js",
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html --public-url ./"
+    "build": "parcel build --no-source-maps src/index.html --public-url ./"
   },
   "browserslist": [
     "last 1 Chrome version"
@@ -17,6 +17,8 @@
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-svelte": "^4.0.6",
-    "svelte": "^3.29.0"
+    "svelte": "^3.29.0",
+    "postcss-modules": "^3.2.2",
+    "tailwindcss": "^1.8.12"
   }
 }

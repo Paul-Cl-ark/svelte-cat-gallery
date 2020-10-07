@@ -13,23 +13,18 @@
   })
 </script>
 
-<div class="images">
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3">
   {#each images as image}
   <img src="{image.url}" alt="A nice cat" />
   {/each}
 </div>
 
 <style>
-  .images {
-    display: grid;
-    grid-gap: 5vh;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   img {
     width: 100%;
     height: auto;
-    max-height: 46vh;
+    max-height: 50vh;
     object-fit: scale-down;
+    padding: 1em;
   }
 </style>
