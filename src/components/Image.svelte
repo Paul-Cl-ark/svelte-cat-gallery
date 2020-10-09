@@ -1,15 +1,22 @@
 <script>
-  export let src
+  export let image
 </script>
 
-<img {src} alt="A nice cat" />
+<div class="wrapper">
+  <div style={
+    `background: url(${image.url});
+    background-size: cover;
+    background-position: center;
+    min-height: 100%;`
+  }>
+    hello
+  </div>
+</div>
 
 <style>
-  img {
-    width: 100%;
-    height: auto;
+  .wrapper {
     max-height: 50vh;
-    object-fit: scale-down;
+    min-height: 50vh;
     padding: 1em;
   }
 </style>
