@@ -1,5 +1,6 @@
 <script>
   import { onMount } from 'svelte'
+  import Image from './components/Image'
 
   let images = []
 
@@ -15,16 +16,8 @@
 
 <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3">
   {#each images as image}
-  <img src="{image.url}" alt="A nice cat" />
+  <Image src={image.url}/>
   {/each}
 </div>
 
-<style>
-  img {
-    width: 100%;
-    height: auto;
-    max-height: 50vh;
-    object-fit: scale-down;
-    padding: 1em;
-  }
-</style>
+
