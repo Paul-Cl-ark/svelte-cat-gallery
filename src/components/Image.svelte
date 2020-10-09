@@ -7,10 +7,9 @@
     `background: url(${image.url});
     background-size: cover;
     background-position: center;
-    min-height: 100%;`
-  }>
-    hello
-  </div>
+    min-height: 100%;
+    border-radius: 5px;`
+  }/>
 </div>
 
 <style>
