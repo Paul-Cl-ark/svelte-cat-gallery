@@ -12,12 +12,14 @@
       .then((response) => (images = response))
       .catch((err) => {})
   })
-</script>
+
+  const getNewCat = ({detail}) => {
+    console.log(detail)
+  }
+ </script>
 
 <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3">
-  {#each images as image}
-  <Image {image}/>
+  {#each images as image, index}
+    <Image {image} {index} on:getNewCat={getNewCat} />
   {/each}
 </div>
-
-
