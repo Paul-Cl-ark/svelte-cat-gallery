@@ -9,10 +9,7 @@
     const apiKey = `&api_key=${process.env.CAT_API_KEY}`
     fetch(`${path}${apiKey}`)
       .then((response) => response.json())
-      .then((response) => {
-        console.log(response)
-        (images = response)
-      })
+      .then((response) => (images = response))
       .catch((err) => {})
   })
 </script>
@@ -21,7 +18,6 @@
   {#each images as image}
   <Image {image}/>
   {/each}
-
 </div>
 
 
