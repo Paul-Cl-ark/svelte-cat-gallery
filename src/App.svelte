@@ -4,17 +4,21 @@
 
   let images = []
 
-  onMount(() => {
-    const path = 'https://api.thecatapi.com/v1/images/search?limit=6'
+  const hitCatApi = (limit = 6) => {
+    const path = `https://api.thecatapi.com/v1/images/search?limit=${limit}`
     const apiKey = `&api_key=${process.env.CAT_API_KEY}`
-    fetch(`${path}${apiKey}`)
+    return fetch(`${path}${apiKey}`)
       .then((response) => response.json())
-      .then((response) => (images = response))
-      .catch((err) => {})
-  })
+      .catch((err) => [])
+  }
 
-  const getNewCat = ({detail}) => {
-    console.log(detail)
+  onMount(async () => images = await hitCatApi())
+
+  const getNewCat = async ({detail}) => {
+    const [newCat] = await hitCatApi(1)
+    const newImages = images
+    newImages.splice(detail, 1, newCat)
+    images = newImages
   }
  </script>
 
