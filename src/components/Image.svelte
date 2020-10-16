@@ -16,12 +16,9 @@
 
 <div class="wrapper">
   <div
-    class="relative"
-    style={`background: url(${image.url});
-    background-size: cover;
-    background-position: center;
-    min-height: 100%;
-    border-radius: 5px;`}>
+    class="relative rounded-md bg-center min-h-full"
+    style={`background: url(${image.url}); background-size: cover;`}
+  >
     <button
       on:click={getNewCat}
       class="m-3 absolute right-0 bottom-0 bg-pink-400 hover:bg-pink-500 
