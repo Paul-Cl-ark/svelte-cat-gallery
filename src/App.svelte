@@ -27,11 +27,11 @@
  </script>
 
 {#if loading}
-  <div class="flex h-screen">
+  <div class="flex h-screen bg-gray-100">
     <img class="m-auto rounded-full" src="https://media1.tenor.com/images/2900121f5d66061f8a5d8d34c41d4454/tenor.gif" loop=infinite/>            
   </div>
 {:else}
-  <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3">
+  <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 bg-gray-100">
   {#if images.length}
   {#each images as image, index}
     <Image {image} {index} on:getNewCat={getNewCat} />
