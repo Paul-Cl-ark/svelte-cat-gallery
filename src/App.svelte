@@ -13,8 +13,10 @@
       .catch((err) => [])
   }
 
-  onMount(async () => {
-    images = await hitCatApi()
+  onMount(() => getSixCats())
+
+  const getSixCats = (async () => {
+    images = await hitCatApi(6)
     loading = false
   })
 
@@ -24,7 +26,17 @@
     newImages.splice(detail, 1, newCat)
     images = newImages
   }
- </script>
+</script>
+
+<style>
+  button {
+    transition: all .3s ease-in-out; 
+  }
+
+  button:hover { 
+    transform: scale(1.03); 
+  }
+</style>
 
 {#if loading}
   <div class="flex h-screen bg-gray-100">
@@ -38,7 +50,16 @@
   {/each}
   {:else}
     <div class="flex h-screen w-screen">
-      <p class="m-auto font-mono">AWWW SHUCKS... NO KATS 4 U</p>
+      <div class="m-auto">
+        <p class="font-mono">AWWW SHUCKS... NO KATS 4 U</p>
+        <p>
+          <button
+            on:click={getSixCats}
+            class="m-3 bg-pink-400 hover:bg-pink-500 text-white py-2 px-4 rounded font-mono">
+            PLZ I CAN TRY AGAIN?!?
+          </button>
+        </p>
+      </div>
     </div>
   {/if}
   </div>
