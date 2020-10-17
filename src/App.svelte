@@ -36,6 +36,9 @@
   {#each images as image, index}
     <Image {image} {index} on:getNewCat={getNewCat} />
   {/each}
+  {:else}
+    <div class="flex h-screen w-screen">
+      <div class="m-auto">AWWW SHUCKS... NO KATS 4 U</div></div>
   {/if}
   </div>
 {/if}
