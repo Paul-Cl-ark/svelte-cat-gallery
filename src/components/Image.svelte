@@ -30,7 +30,7 @@
     <button
       on:click={getNewCat}
       class="m-3 absolute right-0 bottom-0 bg-pink-400 hover:bg-pink-500 
-      text-white font-bold py-2 px-4 rounded">
+      text-white py-2 px-4 rounded font-mono">
       CHANGE DIS JUAN!!
     </button>
   </div>
