@@ -16,7 +16,7 @@
 
 <div class="wrapper">
   <div
-    class="relative rounded-md bg-center min-h-full"
+    class="relative rounded-md bg-center min-h-full shadow-lg"
     style={`background: url(${image.url}); background-size: cover;`}
   >
     <button
