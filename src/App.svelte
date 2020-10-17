@@ -38,7 +38,8 @@
   {/each}
   {:else}
     <div class="flex h-screen w-screen">
-      <div class="m-auto">AWWW SHUCKS... NO KATS 4 U</div></div>
+      <p class="m-auto">AWWW SHUCKS... NO KATS 4 U</p>
+    </div>
   {/if}
   </div>
 {/if}
