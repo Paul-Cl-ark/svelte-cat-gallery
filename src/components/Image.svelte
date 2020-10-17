@@ -12,6 +12,14 @@
     min-height: 50vh;
     padding: 1em;
   }
+
+  button {
+    transition: all .3s ease-in-out; 
+  }
+
+  button:hover { 
+    transform: scale(1.03); 
+  }
 </style>
 
 <div class="wrapper">
